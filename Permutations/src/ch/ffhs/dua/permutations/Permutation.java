@@ -14,14 +14,6 @@ public final class Permutation
 
     /**
      * Crate an array of permutations of the interger numbers {0,1,2,3,...,N-1}.
-     *
-     * @param p_iN the number of elements to create the permutations
-     * @return the permutations as an array of integers
-     * <p><img style="width: 50%; padding: 4px; border-radius: 2px; box-shadow: 0 0 0 7px #fff, 0 0 0 8px #ddd;" alt="perm()" src="doc-files\perm.jpg"></p>
-     * The method is recursively creating a temporary array 1 step smaller than the requested one and inserts <br>
-     * the additional value column-wise from column 0 to n-1. <br>
-     * p_iN=1 returns a 1x1 array with value 0 <br>
-     * p_iN=0 returns a 0x0 array i.e. an empty array (not null) <br>
      */
     public static int[][] permutations(int p_iN)
     {
@@ -113,13 +105,7 @@ public final class Permutation
     /**
      * Insert a given cell into a given array at the defined column number and return the
      * combined array which has a size 1 larger than the given array
-     *
-     * @param p_SourceArray the array of integers as the source array
-     * @param p_iColumn     the column number of the insertion
-     * @param p_iValue      value of the inserted cell
-     * @return              the combined array
-     * <p><img style="width: 50%; padding: 4px; border-radius: 2px; box-shadow: 0 0 0 7px #fff, 0 0 0 8px #ddd;" alt="insert()" src="doc-files\insert.jpg"></p>
-     * The method creates a new array 1 cell larger than the given one and copies the values into it so<br>that the new element is at the given location
+     
      */
     static int[] insertCell(int[] p_SourceArray, int p_iColumn, int p_iValue)
     {
